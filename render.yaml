@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: strapi-app
+    env: node
+    buildCommand: npm install
+    startCommand: npm run start
+    rootDir: .
