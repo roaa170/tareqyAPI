@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "driver",
+  "info": {
+    "singularName": "drivers",
+    "pluralName": "driver",
+    "displayName": "Drivers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "NID": {
+      "type": "string",
+      "minLength": 14,
+      "maxLength": 14,
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "usePic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "address": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "json"
+    }
+  }
+}
